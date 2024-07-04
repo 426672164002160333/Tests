@@ -48862,6 +48862,10 @@ tr .fa.fa-trophy {
               case "Infinity":
                 (t.font = d + "pt SBGlyphs"),
                   (t.fillStyle = "#fff"),
+                  t.fillText("a", e / 2, i / 2);
+                  
+                (t.font = d + "pt SBGlyphs"),
+                  (t.fillStyle = "#fff"),
                   t.fillText("C", e / 2, i / 2);
                 break;
               case "youtube":
