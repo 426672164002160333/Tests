@@ -48602,7 +48602,7 @@ tr .fa.fa-trophy {
                 s.addColorStop(1, "#CCC");
               break;
             case "Amethyst":
-              (s = t.createLinearGradient(45, 45, 45, i)),
+              (s = t.createLinearGradient(0, 0, i, i)),
                 s.addColorStop(0, "hsl(275,100%,50%)"),
                 s.addColorStop(0.5, "hsl(275,100%,80%)"),
                 s.addColorStop(0.5, "hsl(275,100%,50%)"),
