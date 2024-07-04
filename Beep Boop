@@ -48821,7 +48821,7 @@ tr .fa.fa-trophy {
                 t.fillStyle = "#246";
                 break;
               case "Infinity":
-                t.fillStyle = "hsla(0,0%,100%,0.5)";
+                t.fillStyle = "#000";
                 break;
               case "star":
                 t.fillStyle = "hsl(200,50%,20%)";
@@ -48861,13 +48861,16 @@ tr .fa.fa-trophy {
                 break;
               case "Infinity":
               let textGradient = t.createLinearGradient(0, 0, 0, i);
-                textGradient.addColorStop(0, "hsl(190, 100%, 80%)");   // Light blue
-                textGradient.addColorStop(0.25, "hsl(190, 100%, 30%)"); // Dark blue
-                textGradient.addColorStop(0.5, "hsl(190, 100%, 50%)");  // Medium blue
-                textGradient.addColorStop(0.75, "hsl(190, 100%, 30%)"); // Dark blue
-                textGradient.addColorStop(1, "hsl(190, 100%, 80%)");   // Light blue
+                textGradient.addColorStop(0, "hsl(180, 100%, 50%)");
+                textGradient.addColorStop(1, "hsl(280, 100%, 50%)");
 
-                (t.fillStyle = textGradient), t.fillText("C", e / 2, i / 2);
+                (t.fillStyle = textGradient),
+                t.fillText("C", e / 2, i / 2);
+                t.shadowColor = "#fff"; // Black shadow with 50% opacity
+                t.shadowBlur = 15;                    // Blur radius
+                t.shadowOffsetX = 0;                  // Horizontal offset
+                t.shadowOffsetY = 0;                  // Vertical offset
+
                 break;
               case "youtube":
                 (t.fillStyle = "#FFF"), t.fillText("Z", e / 2, i / 2);
