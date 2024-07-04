@@ -48861,9 +48861,9 @@ tr .fa.fa-trophy {
                 break;
               case "Infinity":
                 (t.font = d + "pt SBGlyphs"),
-                  (t.fillStyle = "#fff"),
+                  (t.fillStyle = "hsl(0,0%,100%, 0.4)"),
                   t.fillText("a", e / 2, i / 2);
-                  
+
                 (t.font = d + "pt SBGlyphs"),
                   (t.fillStyle = "#fff"),
                   t.fillText("C", e / 2, i / 2);
