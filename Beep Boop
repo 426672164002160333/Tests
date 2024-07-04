@@ -48691,9 +48691,9 @@ tr .fa.fa-trophy {
                 t.beginPath(),
                 s = t.createRadialGradient(0, 0, 0, 0, 0, i / 6),
                 s.addColorStop(0, "hsl(0,0%,100%)"),
-                s.addColorStop(1, "hsl(190,100%,50%)"),
+                s.addColorStop(1, "hsla(0,0%,100%,0.5)"),
                 t.fillStyle = s,
-                t.strokeStyle = "hsla(275,100%,50%,0.8)",
+                t.strokeStyle = "hsla(0,0%,0%,0.8)",
                 t.lineWidth = i / 24,
                 n = 0,
                 o = p.length;
@@ -48718,9 +48718,9 @@ tr .fa.fa-trophy {
                 t.beginPath(),
                 s = t.createRadialGradient(0, 0, 0, 0, 0, i / 6),
                 s.addColorStop(0, "hsl(0,0%,100%)"),
-                s.addColorStop(1, "hsl(190,100%,50%)"),
+                s.addColorStop(1, "hsla(0,0%,100%,0.5)"),
                 t.fillStyle = s,
-                t.strokeStyle = "hsla(275,100%,50%,0.8)",
+                t.strokeStyle = "hsla(0,0%,0%,0.8)",
                 t.lineWidth = i / 24,
                 d = 0,
                 h = p.length;
