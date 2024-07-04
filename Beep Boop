@@ -48609,16 +48609,11 @@ tr .fa.fa-trophy {
                 s.addColorStop(1, "hsl(275,100%,50%)");
               break;
             case "GhostDiamond":
-            //   (s = t.createLinearGradient(0, 0, 0, i)),
-            //     s.addColorStop(0, "hsl(190,100%,50%)"),
-            //     s.addColorStop(0.5, "hsl(190,100%,30%)"),
-            //     s.addColorStop(0.5, "hsl(190,100%,50%)"),
-            //     s.addColorStop(1, "hsl(190,100%,50%)");
-              s = t.createLinearGradient(0, 0, 0, i);
-                s.addColorStop(0, "hsl(190, 100%, 80%)");
-                s.addColorStop(0.25, "hsl(190, 100%, 30%)");
-                s.addColorStop(0.5, "hsl(190, 100%, 50%)");
-                s.addColorStop(0.75, "hsl(190, 100%, 30%)");
+              (s = t.createLinearGradient(i, 0, 0, i)),
+                s.addColorStop(0, "hsl(190, 100%, 80%)"),
+                s.addColorStop(0.25, "hsl(190, 100%, 30%)"),
+                s.addColorStop(0.5, "hsl(190, 100%, 50%)"),
+                s.addColorStop(0.75, "hsl(190, 100%, 30%)"),
                 s.addColorStop(1, "hsl(190, 100%, 80%)");
               break;
             case "titanium":
