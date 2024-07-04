@@ -48861,11 +48861,17 @@ tr .fa.fa-trophy {
                 break;
               case "Infinity":
                 (t.font = d + "pt SBGlyphs"),
-                  (t.fillStyle = "hsl(0,0%,100%, 0.4)"),
+                  (t.fillStyle = "hsla(0,0%,100%, 0.3)"),
                   t.fillText("a", e / 2, i / 2);
 
                 (t.font = d + "pt SBGlyphs"),
                   (t.fillStyle = "#fff"),
+
+                  (t.shadowColor = "rgba(0, 0, 0, 0.5)"),
+                    (t.shadowBlur = 10),
+                    (t.shadowOffsetX = 0),
+                    (t.shadowOffsetY = 0),
+                    
                   t.fillText("C", e / 2, i / 2);
                 break;
               case "youtube":
