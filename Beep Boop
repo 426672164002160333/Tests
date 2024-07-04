@@ -48820,6 +48820,9 @@ tr .fa.fa-trophy {
               case "reddit":
                 t.fillStyle = "#246";
                 break;
+              case "Infinity":
+                t.fillStyle = "hsla(0,0%,100%,0.5)";
+                break;
               case "star":
                 t.fillStyle = "hsl(200,50%,20%)";
                 break;
@@ -48855,6 +48858,16 @@ tr .fa.fa-trophy {
             ) {
               case "reddit":
                 (t.fillStyle = "#FFF"), t.fillText("~", e / 2, i / 2);
+                break;
+              case "Infinity":
+              let textGradient = t.createLinearGradient(0, 0, 0, i);
+                textGradient.addColorStop(0, "hsl(190, 100%, 80%)");   // Light blue
+                textGradient.addColorStop(0.25, "hsl(190, 100%, 30%)"); // Dark blue
+                textGradient.addColorStop(0.5, "hsl(190, 100%, 50%)");  // Medium blue
+                textGradient.addColorStop(0.75, "hsl(190, 100%, 30%)"); // Dark blue
+                textGradient.addColorStop(1, "hsl(190, 100%, 80%)");   // Light blue
+
+                (t.fillStyle = textGradient), t.fillText("C", e / 2, i / 2);
                 break;
               case "youtube":
                 (t.fillStyle = "#FFF"), t.fillText("Z", e / 2, i / 2);
@@ -49175,6 +49188,7 @@ tr .fa.fa-trophy {
         (t.options = {
           badge: {
             star: "Star",
+            Infinity: "Infinity",
             reddit: "Reddit",
             pirate: "Pirate",
             csf: "Centauri Space Force",
