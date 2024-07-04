@@ -48865,11 +48865,11 @@ tr .fa.fa-trophy {
                 textGradient.addColorStop(1, "hsl(280, 100%, 50%)");
 
                 (t.fillStyle = textGradient),
-                t.fillText("C", e / 2, i / 2);
                 t.shadowColor = "#fff"; // Black shadow with 50% opacity
                 t.shadowBlur = 15;                    // Blur radius
                 t.shadowOffsetX = 0;                  // Horizontal offset
                 t.shadowOffsetY = 0;                  // Vertical offset
+                t.fillText("C", e / 2, i / 2);
 
                 break;
               case "youtube":
