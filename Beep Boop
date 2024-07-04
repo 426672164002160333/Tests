@@ -25119,8 +25119,8 @@ tr .fa.fa-trophy {
               case "Amethyst":
                 this.AmethystMaterial();
                 break;
-              case "GhostDiamond":
-                this.GhostDiamondMaterial();
+              case "GDiamond":
+                this.GDiamondMaterial();
                 break;
               default:
                 this.buildDefaultMaterial();
@@ -25175,7 +25175,7 @@ tr .fa.fa-trophy {
               emissiveMap: Il0OI,
             }));
           }),
-          (t.prototype.GhostDiamondMaterial = function () {
+          (t.prototype.GDiamondMaterial = function () {
             return (this.material = new THREE.MeshPhongMaterial({
               map: OlOl1,
               bumpMap: OlOl1,
@@ -30238,8 +30238,8 @@ tr .fa.fa-trophy {
               case "Amethyst":
                 this.AmethystMaterial();
                 break;
-              case "GhostDiamond":
-                this.GhostDiamondMaterial();
+              case "GDiamond":
+                this.GDiamondMaterial();
                 break;
               default:
                 this.buildDefaultMaterial();
@@ -30294,7 +30294,7 @@ tr .fa.fa-trophy {
               emissiveMap: Il0OI,
             }));
           }),
-          (t.prototype.GhostDiamondMaterial = function () {
+          (t.prototype.GDiamondMaterial = function () {
             return (this.material = new THREE.MeshPhongMaterial({
               map: OlOl1,
               bumpMap: OlOl1,
@@ -48608,8 +48608,8 @@ tr .fa.fa-trophy {
                 s.addColorStop(0.5, "hsl(275,100%,50%)"),
                 s.addColorStop(1, "hsl(275,100%,50%)");
               break;
-            case "GhostDiamond":
-              (s = t.createLinearGradient(i, 0, 0, i)),
+            case "GDiamond":
+              (s = t.createLinearGradient(0, 0, 0, i)),
                 s.addColorStop(0, "hsl(190, 100%, 80%)"),
                 s.addColorStop(0.25, "hsl(190, 100%, 30%)"),
                 s.addColorStop(0.5, "hsl(190, 100%, 50%)"),
@@ -48987,7 +48987,7 @@ tr .fa.fa-trophy {
             (i = ["star", "paw", "pirate", "reddit", "invader", "youtube"][
               Math.floor(6 * Math.random())
             ]),
-            (s = ["zinc", "Amethyst", "Ghost Diamond", "gold", "alloy", "carbon", "titanium"][
+            (s = ["zinc", "Amethyst", "Diamond", "gold", "alloy", "carbon", "titanium"][
               Math.floor(5 * Math.random())
             ]),
             (l = ["0", "1", "2", "3"][Math.floor(4 * Math.random())]),
@@ -48997,7 +48997,7 @@ tr .fa.fa-trophy {
         (t.test = function () {
           var e, i, s, l, n, a, o, r, h, u, d, c;
           for (
-            u = ["zinc", "Amethyst", "Ghost Diamond", "gold", "alloy", "carbon", "titanium"],
+            u = ["zinc", "Amethyst", "Diamond", "gold", "alloy", "carbon", "titanium"],
               s = 0,
               a = u.length;
             s < a;
@@ -49198,7 +49198,7 @@ tr .fa.fa-trophy {
           finish: {
             zinc: "Zinc",
             Amethyst: "Amethyst",
-            GhostDiamond: "Ghost Diamond",
+            GDiamond: "Diamond",
             alloy: "Alloy",
             gold: "Gold",
             titanium: "Titanium",
