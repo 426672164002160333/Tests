@@ -33296,7 +33296,7 @@ tr .fa.fa-trophy {
           (this.radar_zoom = 1),
           (this.respawn_delay = 0.1),
           (this.sharing_enabled = !0),
-          (this.restricted_weapons_store = !0),
+          (this.restricted_weapons_store = !1),
           (this.max_enter_players = 50),
           (this.vocabulary = [
             { text: "Hello", icon: "E", key: "O" },
@@ -48871,7 +48871,7 @@ tr .fa.fa-trophy {
                     (t.shadowBlur = 10),
                     (t.shadowOffsetX = 0),
                     (t.shadowOffsetY = 0),
-                    
+
                   t.fillText("C", e / 2, i / 2);
                 break;
               case "youtube":
