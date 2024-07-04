@@ -48860,13 +48860,9 @@ tr .fa.fa-trophy {
                 (t.fillStyle = "#FFF"), t.fillText("~", e / 2, i / 2);
                 break;
               case "Infinity":
-              let textGradient = t.createLinearGradient(0, 0, 0, i);
-                textGradient.addColorStop(0, "hsl(180, 100%, 50%)");
-                textGradient.addColorStop(1, "hsl(280, 100%, 50%)");
-
-                (t.fillStyle = textGradient),
-                t.fillText("C", e / 1.5, i / 1.5);
-
+                (t.font = "48px SBGlyphs"),
+                  (t.fillStyle = "#fff"),
+                  t.fillText("C", e / 2, i / 2);
                 break;
               case "youtube":
                 (t.fillStyle = "#FFF"), t.fillText("Z", e / 2, i / 2);
