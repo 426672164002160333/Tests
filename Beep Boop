@@ -48602,20 +48602,24 @@ tr .fa.fa-trophy {
                 s.addColorStop(1, "#CCC");
               break;
             case "Amethyst":
-                s = t.createLinearGradient(0, 0, 0, i);
-                    s.addColorStop(0, "hsl(275,100%,20%)");   // Darker purple
-                    s.addColorStop(0.25, "hsl(275,100%,40%)"); // Medium purple
-                    s.addColorStop(0.5, "hsl(275,100%,70%)");  // Light purple
-                    s.addColorStop(0.75, "hsl(275,100%,85%)"); // Lighter purple, shiny part
-                    s.addColorStop(1, "hsl(275,100%,50%)");    // Medium purple
-
+              (s = t.createLinearGradient(0, 0, 0, i)),
+                s.addColorStop(0, "hsl(275,100%,50%)"),
+                s.addColorStop(0.5, "hsl(275,100%,80%)"),
+                s.addColorStop(0.5, "hsl(275,100%,50%)"),
+                s.addColorStop(1, "hsl(275,100%,50%)");
               break;
             case "GhostDiamond":
-              (s = t.createLinearGradient(0, 0, 0, i)),
-                s.addColorStop(0, "hsl(190,100%,50%)"),
-                s.addColorStop(0.5, "hsl(190,100%,30%)"),
-                s.addColorStop(0.5, "hsl(190,100%,50%)"),
-                s.addColorStop(1, "hsl(190,100%,50%)");
+            //   (s = t.createLinearGradient(0, 0, 0, i)),
+            //     s.addColorStop(0, "hsl(190,100%,50%)"),
+            //     s.addColorStop(0.5, "hsl(190,100%,30%)"),
+            //     s.addColorStop(0.5, "hsl(190,100%,50%)"),
+            //     s.addColorStop(1, "hsl(190,100%,50%)");
+              s = t.createLinearGradient(0, 0, 0, i);
+                s.addColorStop(0, "hsl(190, 100%, 80%)");
+                s.addColorStop(0.25, "hsl(190, 100%, 30%)");
+                s.addColorStop(0.5, "hsl(190, 100%, 50%)");
+                s.addColorStop(0.75, "hsl(190, 100%, 30%)");
+                s.addColorStop(1, "hsl(190, 100%, 80%)");
               break;
             case "titanium":
               (s = t.createLinearGradient(0, 0, 0, i)),
