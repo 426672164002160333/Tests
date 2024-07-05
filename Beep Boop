@@ -49443,8 +49443,15 @@ tr .fa.fa-trophy {
             (this.ships_by_code[100 * t.level + t.model] = t)
           );
         }),
-        (t.prototype.getDefaultShip = function () {
-          return this.ships[Math.floor(Math.random() * this.ships.length)];
+        (t.prototype.getDefaultShip = function (t) {
+          if(t === null || t.level === 1) {
+            return this.ships[0];
+          } else {
+            return this.ships[t.level + t.model];
+          }
+
+          //t.level + t.model
+
           // return this.ships[0];
         }),
         (t.prototype.l0O0I = function () {
