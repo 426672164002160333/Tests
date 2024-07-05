@@ -10798,7 +10798,7 @@ tr .fa.fa-trophy {
           var t, e, i, s, l, n, a;
           for (
             t = document.createElement("canvas"),
-              this.shipicon = new I1011(lOO1O.getDefaultShip(), 0).getIcon(128),
+              this.shipicon = new I1011(lOO1O.ships_by_code[this.ship_type], 0).getIcon(128),
               t.width = 128,
               t.height = 64,
               e = t.getContext("2d"),
