@@ -49447,7 +49447,8 @@ tr .fa.fa-trophy {
           if(t === null || t.level === 1) {
             return this.ships[0];
           } else {
-            return this.ships[t.level + t.model];
+            return this.ships[10];
+            // return this.ships[t.level + t.model];
           }
 
           //t.level + t.model
