@@ -39810,9 +39810,9 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = 1),// t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
-              (this.restricted_weapons_store = !1),// (this.restricted_weapons_store = !t.weapons_store),
+              (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
           )
             return (this.vocabulary = t.vocabulary);
@@ -40122,7 +40122,7 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = 1),//t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
               (this.restricted_weapons_store = !1),// (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
@@ -40147,7 +40147,7 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = 1),// t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
               (this.restricted_weapons_store = !1),// (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
@@ -40172,7 +40172,7 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = 1),// t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
               (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
@@ -40197,7 +40197,7 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = 1),// t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
               (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
