@@ -33071,7 +33071,7 @@ tr .fa.fa-trophy {
           (this.max_enter_players = 30),
           (this.options = { friction_ratio: 1, speed_mod: 1 }),
           (this.rotate_mines = !1),
-          (this.radar_zoom = 2),
+          (this.radar_zoom = 1),
           (this.soundtrack = "procedurality.mp3"),
           (this.respawn_delay = 5e3),
           (this.IOIll = !0),
@@ -33171,7 +33171,7 @@ tr .fa.fa-trophy {
             null == this.options.friction_ratio &&
               (this.options.friction_ratio = 1),
             null == this.options.speed_mod && (this.options.speed_mod = 1),
-            this.options.map_size > 120 && (this.radar_zoom = 4),
+            this.options.map_size > 120 && (this.radar_zoom = 1),
             null != this.options.ships && this.parseShips(this.options),
             "team" === this.id &&
               this.options.max_players >= 200 &&
@@ -33292,7 +33292,7 @@ tr .fa.fa-trophy {
       function i(e) {
         (this.lIl0I = e),
           i.IIIlO.constructor.call(this, "survival", "Survival Mode"),
-          (this.max_enter_time = 1800*2),
+          (this.max_enter_time = 1800),
           (this.radar_zoom = 1),
           (this.respawn_delay = 0.1),
           (this.sharing_enabled = !0),
@@ -39810,7 +39810,7 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = 1),// t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
               (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
@@ -40122,7 +40122,7 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = 1),//t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
               (this.restricted_weapons_store = !1),// (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
@@ -40147,7 +40147,7 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = 1),// t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
               (this.restricted_weapons_store = !1),// (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
@@ -40172,7 +40172,7 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = 1),// t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
               (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
@@ -40197,7 +40197,7 @@ tr .fa.fa-trophy {
         (e.prototype.setOptions = function (t) {
           if (
             (e.IIIlO.setOptions.call(this, t),
-            t.radar_zoom && (this.radar_zoom = 1),// t.radar_zoom && (this.radar_zoom = t.radar_zoom),
+            t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
               (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
