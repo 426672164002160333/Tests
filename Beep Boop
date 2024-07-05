@@ -12445,7 +12445,7 @@ tr .fa.fa-trophy {
       function e(t) {
         (this.store = t),
           e.IIIlO.constructor.call(this),
-          (this.OIIIl = 60),
+          (this.OIIIl = 9999),
           (this.end = Date.now() + 6e4);
       }
       return (
@@ -39812,7 +39812,7 @@ tr .fa.fa-trophy {
             (e.IIIlO.setOptions.call(this, t),
             t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
-              (this.restricted_weapons_store = !t.weapons_store),
+              (this.restricted_weapons_store = !1),// (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
           )
             return (this.vocabulary = t.vocabulary);
@@ -40124,7 +40124,7 @@ tr .fa.fa-trophy {
             (e.IIIlO.setOptions.call(this, t),
             t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
-              (this.restricted_weapons_store = !t.weapons_store),
+              (this.restricted_weapons_store = !1),// (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
           )
             return (this.vocabulary = t.vocabulary);
@@ -40149,7 +40149,7 @@ tr .fa.fa-trophy {
             (e.IIIlO.setOptions.call(this, t),
             t.radar_zoom && (this.radar_zoom = t.radar_zoom),
             null != t.weapons_store &&
-              (this.restricted_weapons_store = !t.weapons_store),
+              (this.restricted_weapons_store = !1),// (this.restricted_weapons_store = !t.weapons_store),
             null != t.vocabulary)
           )
             return (this.vocabulary = t.vocabulary);
