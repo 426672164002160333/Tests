@@ -49443,13 +49443,9 @@ tr .fa.fa-trophy {
             (this.ships_by_code[100 * t.level + t.model] = t)
           );
         }),
-        (t.prototype.getDefaultShip = function (t) {
-          if(t === null || t.level === 1) {
-            return this.ships[0];
-          } else {
-            return this.ships[10];
-            // return this.ships[t.level + t.model];
-          }
+        (t.prototype.getDefaultShip = function () {
+          this.Ol000 = this.lIl0I.Ol000;
+          return this.lIl0I.mode.lOO1O.ships_by_code[this.Ol000.type.code];
 
           //t.level + t.model
 
