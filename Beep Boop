@@ -19947,7 +19947,7 @@ tr .fa.fa-trophy {
           return this.levels[t.level].push(t);
         }),
         (t.prototype.getDefaultShip = function () {
-          return this.types[10];
+          return this.types[0];
         }),
         (t.prototype.next = function (t) {
           var e, i, s, l, n, a, o, r, h;
@@ -49444,7 +49444,8 @@ tr .fa.fa-trophy {
           );
         }),
         (t.prototype.getDefaultShip = function () {
-          return this.ships[10];
+          return this.ships[Math.floor(Math.random() * this.ships.length)];
+          // return this.ships[0];
         }),
         (t.prototype.l0O0I = function () {
           return this.ships[Math.floor(Math.random() * this.ships.length)];
