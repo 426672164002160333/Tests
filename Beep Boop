@@ -49430,8 +49430,11 @@ tr .fa.fa-trophy {
       );
     })()),
     (this.l1lOI = (function () {
-      function t() {
-        (this.ships = []), (this.ships_by_code = []);
+      function t(t) {
+        (this.ships = []),
+        (this.tt = t),
+        (this.type = 402),
+        (this.ships_by_code = []);
       }
       return (
         (t.prototype.clear = function () {
@@ -49444,8 +49447,7 @@ tr .fa.fa-trophy {
           );
         }),
         (t.prototype.getDefaultShip = function () {
-          this.Ol000 = this.lIl0I.Ol000;
-          return this.lIl0I.mode.lOO1O.ships_by_code[this.Ol000.type.code];
+          return this.tt.lIl0I.mode.lOO1O.ships_by_code[this.type];
 
           //t.level + t.model
 
