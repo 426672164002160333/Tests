@@ -42610,7 +42610,7 @@ tr .fa.fa-trophy {
                       spectate: t.lIl0I.mode.spectate,
                       spectate_ship: t.lIl0I.mode.spectate_ship,
                       // player_name: new O0OOO().ll00l(t.lIl0I.player_name),
-                      player_name: "     Destruction",
+                      player_name: "『ǶហͲའ』DESTRUCTION",
                       // hue: t.hue,
                       hue: "240",
                       preferred: null != t.lIl0I.preferred && t.lIl0I.preferred,
