@@ -5760,9 +5760,9 @@ tr .fa.fa-trophy {
           var i, s, l, n, a, o, r, h, u, d, c, p, I, O, m, f, g, y, v;
           if (null != this.view) {
             for (
-              this.background = "hsla(" + this.hue + ",70%,30%,.15)",
+              this.background = "hsla(270,0%,100%,0.05)",
                 this.medium = "hsla(" + this.hue + ",50%,50%,.4)",
-                this.color = "hsla(" + this.hue + ",50%,80%,1)",
+                this.color = "hsla(270,0%,100%,1)",
                 e.save(),
                 e.translate(this.px, this.ll1lO),
                 v = Math.round((20 * this.llllO) / 512),
@@ -5808,14 +5808,15 @@ tr .fa.fa-trophy {
                   : this.lIl0I.is_mobile_app ||
                     ((e.textAlign = "center"),
                     (e.font = Math.round(0.8 * v) + "pt Play"),
-                    e.fillText("TAB", 0.5 * this.llllO, 0.05 * this.llllO),
-                    (e.strokeStyle = "#000"),
-                    e.strokeRect(
-                      0.45 * this.llllO,
-                      0.02 * this.llllO,
-                      0.1 * this.llllO,
-                      0.06 * this.llllO
-                    )),
+                    e.fillText("TAB", 0.5 * this.llllO, 0.05 * this.llllO)
+                    // ,(e.strokeStyle = "#000"),
+                    // e.strokeRect(
+                    //   0.45 * this.llllO,
+                    //   0.02 * this.llllO,
+                    //   0.1 * this.llllO,
+                    //   0.06 * this.llllO
+                    // )
+                    ),
                 v = Math.round((22 * this.llllO) / 512),
                 e.font = v + "pt Play",
                 e.textBaseline = "middle",
@@ -5823,13 +5824,14 @@ tr .fa.fa-trophy {
                 u = 2,
                 p = this.lIl0I.OIO01.Ol000.status.rank,
                 s = e.createLinearGradient(0, 0, this.llllO, 0),
-                s.addColorStop(0, "hsla(" + this.hue + ",40%,20%,.5)"),
-                s.addColorStop(0.05, "hsla(" + this.hue + ",40%,20%,0)"),
-                s.addColorStop(1, "hsla(" + this.hue + ",40%,20%,.5)"),
+                s.addColorStop(0, "hsla(270,100%,20%,.8)"),
+                s.addColorStop(0.05, "hsla(270,100%,20%,0)"),
+                s.addColorStop(1, "hsla(270,100%,20%,.8)"),
+
                 l = e.createLinearGradient(0, 0, this.llllO, 0),
-                l.addColorStop(0, "hsla(" + this.hue + ",40%,60%,.5)"),
-                l.addColorStop(0.05, "hsla(" + this.hue + ",40%,60%,0)"),
-                l.addColorStop(1, "hsla(" + this.hue + ",40%,60%,.5)"),
+                l.addColorStop(0, "hsla(190,100%,20%,.8)"),
+                l.addColorStop(0.05, "hsla(190,100%,20%,0)"),
+                l.addColorStop(1, "hsla(190,100%,20%,.8)"),
                 e.translate(0, this.lllOI / 11),
                 p > 10 &&
                   ((a = this.hue),
@@ -5847,7 +5849,7 @@ tr .fa.fa-trophy {
                     this.llllO,
                     this.lllOI / 11 - 4
                   ),
-                  (e.fillStyle = "hsla(" + a + ",80%,90%,1)"),
+                  (e.fillStyle = "hsla(0,0%,100%,1)"),
                   (e.textAlign = "left"),
                   this.lIl0I.OIO01.Ol000.status.itsmrhasecp &&
                     ((n = Math.round(0.08 * this.lllOI)),
@@ -5896,7 +5898,7 @@ tr .fa.fa-trophy {
                   this.llllO,
                   this.lllOI / 11 - 4
                 ),
-                (e.fillStyle = "hsla(" + a + ",80%,90%,1)"),
+                (e.fillStyle = "hsla(0,0%,100%,1)"),
                 (e.textAlign = "left"),
                 null != i &&
                   ((n = Math.round(0.08 * this.lllOI)),
@@ -7434,7 +7436,8 @@ tr .fa.fa-trophy {
               i.scale(this.canvas.width / 2, this.canvas.height / 2),
               e = new OO1II(t, this.lIl0I.l011O, this.lIl0I.mode),
               u = {},
-              i.fillStyle = "hsla(" + this.hue + ",50%,50%,.4)",
+              i.fillStyle = "hsla(270,0%,100%,.15)",
+              // i.fillStyle = "hsla(" + this.hue + ",50%,50%,.4)",
               l = a = -this.lIl0I.l011O,
               r = this.lIl0I.l011O - 1;
             a <= r;
@@ -7481,9 +7484,12 @@ tr .fa.fa-trophy {
           var i, s, l, n, a, o, r, h, u, d, c, p, I, O, m, f, g, y, v;
           for (
             p = new lI100(t.seed),
-              this.background = "hsla(" + this.hue + ",70%,30%,.15)",
-              this.medium = "hsla(" + this.hue + ",70%,40%,.25)",
-              this.color = "hsla(" + this.hue + ",50%,80%,1)",
+              this.background = "hsla(" + this.hue + ",70%,30%,0)",
+              this.medium = "hsla(" + this.hue + ",70%,40%,0)",
+              this.color = "hsla(270,0%,100%,1)",
+              // this.background = "hsla(" + this.hue + ",70%,30%,.15)",
+              // this.medium = "hsla(" + this.hue + ",70%,40%,.25)",
+              // this.color = "hsla(" + this.hue + ",50%,80%,1)",
               i = this.canvas2.getContext("2d"),
               i.save(),
               i.translate(this.canvas2.width / 2, this.canvas2.height / 2),
@@ -7495,12 +7501,15 @@ tr .fa.fa-trophy {
               i.fillStyle = n,
               i.fillRect(-1, -1, 2, 2),
               n = i.createRadialGradient(0, 0, 0, 0, 0, 1),
-              n.addColorStop(0, "hsla(" + e + ",100%,80%,.3)"),
-              n.addColorStop(1, "hsla(" + e + ",100%,80%,0)"),
+              n.addColorStop(0, "hsla(180,100%,10%,0.6)"),
+              n.addColorStop(1, "hsla(270,100%,10%,0.4)"),
+              // n.addColorStop(0, "hsla(190,100%,10%,0.3)"),
+              // n.addColorStop(1, "hsla(270,100%,10%,0.3)"),
               i.fillStyle = n,
               i.fillRect(-1, -1, 2, 2),
               i.lineWidth = 0.02,
-              i.strokeStyle = "hsla(" + e + ",50%,70%,.5)",
+              i.strokeStyle = "hsla(" + e + ",50%,70%,0)",
+              // i.strokeStyle = "hsla(" + e + ",50%,70%,.5)",
               i.beginPath(),
               i.rect(-1, -1, 2, 2),
               i.lineWidth = 0.02,
@@ -7516,7 +7525,8 @@ tr .fa.fa-trophy {
               r <= O;
               a = r += 1
             )
-              (i.strokeStyle = "hsla(" + e + ",30%,50%," + (1 - c) + ")"),
+              (i.strokeStyle = "hsla(" + e + ",30%,50%,0)"),
+              // (i.strokeStyle = "hsla(" + e + ",30%,50%," + (1 - c) + ")"),
                 i.beginPath(),
                 i.arc(
                   0,
@@ -7530,8 +7540,10 @@ tr .fa.fa-trophy {
           for (
             i.lineWidth = 0.005,
               n = i.createRadialGradient(0, 0, 0, 0, 0, 1.1),
-              n.addColorStop(0, "hsla(" + e + ",100%,90%,.5)"),
-              n.addColorStop(1, "hsla(" + e + ",100%,90%,0)"),
+              n.addColorStop(0, "hsla(270,0%,0%,0)"),
+              n.addColorStop(1, "hsla(270,0%,0%,0)"),
+              // n.addColorStop(0, "hsla(" + e + ",100%,90%,.5)"),
+              // n.addColorStop(1, "hsla(" + e + ",100%,90%,0)"),
               i.strokeStyle = n,
               l = 0.05 * (1 + p.IOllO(2)),
               a = h = -1,
@@ -7592,8 +7604,10 @@ tr .fa.fa-trophy {
               (e = this.canvas.getContext("2d")),
               e.clearRect(0, 0, this.canvas.width, this.canvas.height),
               e.drawImage(this.repulsor_backup, 0, 0),
-              (e.fillStyle = "hsla(" + (this.hue + 180) + ",90%,80%,.15)"),
-              (e.strokeStyle = "hsla(" + (this.hue + 180) + ",90%,80%,.3)"),
+              (e.fillStyle = "hsla(" + (this.hue + 180) + ",90%,80%,0)"),
+              (e.strokeStyle = "hsla(" + (this.hue + 180) + ",90%,80%,0)"),
+              // (e.fillStyle = "hsla(" + (this.hue + 180) + ",90%,80%,.15)"),
+              // (e.strokeStyle = "hsla(" + (this.hue + 180) + ",90%,80%,.3)"),
               (e.lineWidth = 2),
               (o = t * ll01l.I11Il) > 1)
             )
@@ -7663,19 +7677,28 @@ tr .fa.fa-trophy {
         }),
         (t.prototype.Il000 = function (t, e) {
           var i, s, l, n, a, o, r, h, u, d, c, p, I;
+          let gradient;
           for (
             this.data = t,
               this.hue = e,
               u = new lI100(t.seed),
-              // this.background = "hsla(270,100%,10%,.15)",
-              // this.medium = "hsla(270,70%,40%,.25)",
-              // this.color = "hsla(270,100%,50%,1)",
-              this.background = "hsla(" + this.hue + ",70%,30%,.15)",
-              this.medium = "hsla(" + this.hue + ",70%,40%,.25)",
-              this.color = "hsla(" + this.hue + ",50%,80%,1)",
+              this.background = "hsla(270,0%,100%,.15)",
+              this.medium = "hsla(270,0%,100%,.25)",
+              this.color = "hsla(0,0%,100%,0.7)",
+              // this.background = "hsla(" + this.hue + ",70%,30%,.15)",
+              // this.medium = "hsla(" + this.hue + ",70%,40%,.25)",
+              // this.color = "hsla(" + this.hue + ",50%,80%,1)",
+
               s = this.canvas.getContext("2d"),
               s.clearRect(0, 0, this.canvas.width, this.canvas.height),
-              s.fillStyle = this.background,
+
+              //addistional
+              gradient = s.createLinearGradient(0, 0, this.canvas.width, this.canvas.height),
+              gradient.addColorStop(0, "hsl(270, 100%, 10%)"),
+              gradient.addColorStop(1, "hsl(180, 100%, 10%)"),
+
+              s.fillStyle = gradient,// s.fillStyle = this.background,
+              
               s.fillRect(0, 0, this.canvas.width, this.canvas.height),
               l = this.canvas.height / 4,
               n = l / 2,
@@ -7689,7 +7712,7 @@ tr .fa.fa-trophy {
               s.lineTo(l, 0),
               s.closePath(),
               s.fill(),
-              s.strokeStyle = this.medium,
+              s.strokeStyle = "rgba(0, 0, 0, 0)",// s.strokeStyle = this.medium,
               s.fillStyle = this.color,
               s.lineWidth = 1.5,
               r = 2 + u.IOllO(3),
@@ -7762,21 +7785,22 @@ tr .fa.fa-trophy {
               this.canvas.height / 2
             ),
             this.using_gamepad ||
-              ((s.font = Math.round(0.6 * c) + "pt Play"),
+              ((s.font = Math.round(0.8 * c) + "pt Play"),// ((s.font = Math.round(0.6 * c) + "pt Play"),
               (s.textAlign = "center"),
               s.fillText(
                 "R",
                 this.canvas.width - 4 * l,
                 this.canvas.height / 2
+              )
+              // ,(s.strokeStyle = this.color),
+              // (s.lineWidth = 1),
+              // s.strokeRect(
+              //   this.canvas.width - 5 * l,
+              //   this.canvas.height / 2 - l,
+              //   2 * l,
+              //   2 * l
+              // )
               ),
-              (s.strokeStyle = this.color),
-              (s.lineWidth = 1),
-              s.strokeRect(
-                this.canvas.width - 5 * l,
-                this.canvas.height / 2 - l,
-                2 * l,
-                2 * l
-              )),
             (this.texture.needsUpdate = !0)
           );
         }),
@@ -7827,8 +7851,10 @@ tr .fa.fa-trophy {
             i.translate(0, 64),
             i.scale(1, -1),
             (s = i.createLinearGradient(0, 0, 0, this.canvas.height)),
-            s.addColorStop(0, "hsla(" + e + ",90%,90%,1)"),
-            s.addColorStop(1, "hsla(" + e + ",90%,90%,0)"),
+            s.addColorStop(0, "hsla(0,0%,100%,1)"),
+            s.addColorStop(1, "hsla(0,0%,0%,1)"),
+            // s.addColorStop(0, "hsla(" + e + ",90%,90%,1)"),
+            // s.addColorStop(1, "hsla(" + e + ",90%,90%,0)"),
             (i.fillStyle = s),
             i.fillRect(0, 0, this.canvas.width, this.canvas.height),
             (i.globalCompositeOperation = "destination-in"),
@@ -7844,18 +7870,18 @@ tr .fa.fa-trophy {
             i.fillRect(0, 0, this.canvas.width, this.canvas.height),
             (i.globalCompositeOperation = "source-over"),
             (s = i.createLinearGradient(0, 0, this.canvas.width, 0)),
-            s.addColorStop(0, "hsla(" + e + ",90%,0%,.0)"),
-            s.addColorStop(0.1, "hsla(" + e + ",90%,0%,.0)"),
-            s.addColorStop(0.2, "hsla(" + e + ",90%,0%,.8)"),
-            s.addColorStop(0.5, "hsla(" + e + ",90%,0%,.8)"),
-            s.addColorStop(1, "hsla(" + e + ",90%,0%,.0)"),
+            s.addColorStop(0, "hsla(0,0%,100%,.0)"),
+            s.addColorStop(0.1, "hsla(0,0%,100%,.0)"),
+            s.addColorStop(0.2, "hsla(0,0%,100%,.8)"),
+            s.addColorStop(0.5, "hsla(0,0%,100%,.8)"),
+            s.addColorStop(1, "hsla(0,0%,100%,.0)"),
             (i.fillStyle = s),
             (s = i.createLinearGradient(0, 0, this.canvas.width, 0)),
-            s.addColorStop(0, "hsla(" + e + ",90%,90%,.0)"),
-            s.addColorStop(0.1, "hsla(" + e + ",90%,90%,.0)"),
-            s.addColorStop(0.2, "hsla(" + e + ",90%,90%,.8)"),
-            s.addColorStop(0.5, "hsla(" + e + ",90%,90%,.8)"),
-            s.addColorStop(1, "hsla(" + e + ",90%,90%,.0)"),
+            s.addColorStop(0, "hsla(0,0%,100%,.0)"),
+            s.addColorStop(0.1, "hsla(0,0%,100%,.0)"),
+            s.addColorStop(0.2, "hsla(0,0%,100%,.8)"),
+            s.addColorStop(0.5, "hsla(0,0%,100%,.8)"),
+            s.addColorStop(1, "hsla(0,0%,100%,.0)"),
             (i.fillStyle = s),
             i.fillRect(0, 1, this.canvas.width, 3),
             i.restore(),
@@ -8137,7 +8163,8 @@ tr .fa.fa-trophy {
               (d = 2),
               (g = 1),
               (this.max_index = 1),
-              (_ = this.lIl0I.settings.check("colorblind") ? 1 : 0.7),
+              (_ = 1),
+              // (_ = this.lIl0I.settings.check("colorblind") ? 1 : 0.7),
               null != this.lIl0I.mode.updateRadar)
             ) {
               for (h = c = g, v = this.size - 1; c <= v; h = c += 1)
@@ -8171,7 +8198,8 @@ tr .fa.fa-trophy {
                 this.lIl0I.OIO01.O1001.II10I[u],
                 (r = 20),
                 (r = this.hue),
-                l0O0O.O0O0I(r / 360, 0.2, 0.8, k),
+                l0O0O.O0O0I(0, 0, 0.6, k),
+                // l0O0O.O0O0I(r / 360, 0.2, 0.8, k),
                 (z = (10 * this.lIl0I.OIO01.height) / 1e3),
                 (o = !1),
                 null != this.friendly_colors &&
@@ -8329,11 +8357,11 @@ tr .fa.fa-trophy {
               t = this.canvas.getContext("2d"),
               t.save(),
               t.clearRect(0, 0, this.canvas.width, this.canvas.height),
-              t.fillStyle = "#FFF",
+              t.fillStyle = "#FFFFFF",
               r = [
                 "",
                 "",
-                "",
+                "",// </>
                 "",
                 "",
                 "",
@@ -8899,13 +8927,20 @@ tr .fa.fa-trophy {
         }),
         (t.prototype.repaint = function () {
           var t, e, i;
+          let gradient;
           return (
             (this.background = "hsla(" + this.hue + ",70%,30%,.15)"),
-            (this.medium = "hsla(" + this.hue + ",70%,40%,.25)"),
-            (this.color = "hsla(" + this.hue + ",50%,80%,1)"),
+            (this.medium = "hsla(270,0%,100%,.25)"),
+            (this.color = "hsla(270,0%,100%,1)"),
             (t = this.canvas.getContext("2d")),
             t.clearRect(0, 0, this.canvas.width, this.canvas.height),
-            (t.fillStyle = this.background),
+            
+            //addistional
+            gradient = t.createLinearGradient(0, 0, this.canvas.width, this.canvas.height),
+            gradient.addColorStop(0, "hsl(270, 100%, 10%)"),
+            gradient.addColorStop(1, "hsl(180, 100%, 10%)"),
+
+            (t.fillStyle = gradient),// (t.fillStyle = this.background),
             t.fillRect(0, 0, this.canvas.width, this.canvas.height),
             (e = this.canvas.height / 4),
             (i = e / 2),
@@ -8974,7 +9009,7 @@ tr .fa.fa-trophy {
               this.lIl0I.ping !== this.ping &&
                 ((this.ping = this.lIl0I.ping), (t = !0)),
               t
-                ? ((this.refresh_time = e + 1e3),
+                ? ((this.refresh_time = e + 1e3), // 1e3
                   this.lIl0I.display.addJob(
                     0,
                     (function (t) {
@@ -9768,14 +9803,14 @@ tr .fa.fa-trophy {
             l = r += 1
           )
             0 !== l
-              ? ((i.font = "38pt SBGlyphs"),
+              ? ((i.font = "68pt SBGlyphs"),
                 (i.fillStyle = "#FFF"),
-                i.fillText("$", 32, 32),
+                i.fillText("®", 32,  32),// i.fillText("$", 32,  32),
                 (i.globalCompositeOperation = "destination-out"),
                 (i.font = 0 === l ? "32pt Arial" : "22pt Play"),
                 (i.fillStyle = "rgba(0,0,0,.7)"),
                 (d = 0 === l ? "" : l - 1),
-                i.fillText(d, 32, 30),
+                i.fillText(d, 32, 38),
                 (i.globalCompositeOperation = "source-over"),
                 i.translate(64, 0))
               : i.translate(64, 0);
@@ -10672,15 +10707,20 @@ tr .fa.fa-trophy {
         }),
         (e.prototype.lIllO = function (t) {
           var e, i;
+          let gradient;
           return (
             null != this.material &&
               ((this.material.depthTest = !0), (this.material.depthWrite = !1)),
             this.lIl0I.is_mobile_app
               ? this.drawComponentMobile(t)
               : (this.status ? (t.globalAlpha = 1) : (t.globalAlpha = 0.5),
-                (this.background = "hsla(" + this.hue + ",70%,30%,.15)"),
-                (this.medium = "hsla(" + this.hue + ",50%,40%,.5)"),
-                (this.color = "hsla(" + this.hue + ",70%,80%,1)"),
+
+                (this.background = "hsla(270,100%,15%,0.15)"),
+                (this.medium = "hsla(270,100%,20%,0.5)"),
+                (this.color = "hsla(0,0%,100%,0.9)"),
+                // (this.background = "hsla(" + this.hue + ",70%,30%,.15)"),
+                // (this.medium = "hsla(" + this.hue + ",50%,40%,.5)"),
+                // (this.color = "hsla(" + this.hue + ",70%,80%,1)"),
                 t.save(),
                 t.translate(this.px, this.ll1lO),
                 t.clearRect(0, 0, this.llllO, this.lllOI),
@@ -10689,7 +10729,12 @@ tr .fa.fa-trophy {
                 (e = Math.round(this.lllOI / 3)),
                 (t.font = e + "pt FontAwesome"),
                 (i = this.lllOI / 4),
-                (t.fillStyle = this.medium),
+
+                gradient = t.createLinearGradient(0, 0, this.llllO + 45, this.lllOI),
+                gradient.addColorStop(0, "hsl(270, 100%, 10%)"),
+                gradient.addColorStop(1, "hsl(180, 100%, 10%)"),
+
+                (t.fillStyle = gradient),// (t.fillStyle = this.medium),
                 t.beginPath(),
                 t.moveTo(0, 0),
                 t.lineTo(this.llllO - i, 0),
@@ -10699,28 +10744,55 @@ tr .fa.fa-trophy {
                 t.lineTo(0, this.lllOI - i),
                 t.closePath(),
                 t.fill(),
-                (t.fillStyle = this.color),
+                // (t.fillStyle = this.color),
                 (t.globalAlpha = 1),
+
+
+                // addictional
+                (t.font = (this.lllOI * 1.2) + "pt SBGlyphs"),
+                t.fillText("C", this.lllOI / 2.5, this.lllOI / 2),
+                (t.fillStyle = "hsla(0,0%,100%,0.2)"),
+
+                (t.fillStyle = this.color),
+
+
                 this.status
                   ? t.drawImage(
                       this.shipicon,
                       this.llllO / 2,
-                      0,
-                      this.lllOI,
-                      this.lllOI
+                      1,
+                      this.lllOI - 1.4,
+                      this.lllOI - 1.4
                     )
                   : t.drawImage(
                       this.rcsimage,
-                      this.llllO / 2 - 0.5 * this.lllOI,
-                      0,
-                      2 * this.lllOI,
-                      this.lllOI
+                      this.llllO / 2 - 0.7 * this.lllOI,
+                      1,
+                      2 * this.lllOI - 1.4,
+                      this.lllOI - 1.4
                     ),
+                // this.status
+                //   ? t.drawImage(
+                //       this.shipicon,
+                //       this.llllO / 2,
+                //       0,
+                //       this.lllOI,
+                //       this.lllOI
+                //     )
+                //   : t.drawImage(
+                //       this.rcsimage,
+                //       this.llllO / 2 - 0.5 * this.lllOI,
+                //       0,
+                //       2 * this.lllOI,
+                //       this.lllOI
+                //     ),
+
                 (t.globalAlpha = this.status ? 1 : 0.5),
                 (t.font = e + "pt Play"),
                 this.status
                   ? t.fillText("RCS: ON", 0.25 * this.lllOI, this.lllOI / 2)
                   : t.fillText("RCS: OFF", 0.25 * this.lllOI, this.lllOI / 2),
+
                 this.using_gamepad
                   ? Gamepad.drawButton(
                       "LT",
@@ -10731,13 +10803,13 @@ tr .fa.fa-trophy {
                       this.hue
                     )
                   : ((t.textAlign = "center"),
-                    (t.font = Math.round(0.6 * e) + "pt Play"),
+                    (t.font = Math.round(0.8 * e) + "pt Play"),// (t.font = Math.round(0.6 * e) + "pt Play"),
                     t.fillText(
                       "CTRL",
                       this.llllO - this.lllOI / 4 - 0.4 * this.lllOI,
                       this.lllOI / 2
                     ),
-                    (t.strokeStyle = this.color),
+                    (t.strokeStyle = "rgba(0, 0, 0, 0)"),// (t.strokeStyle = this.color),
                     t.strokeRect(
                       this.llllO - this.lllOI / 4 - 0.8 * this.lllOI,
                       0.3 * this.lllOI,
@@ -11329,10 +11401,13 @@ tr .fa.fa-trophy {
             return (this.selected = t), (this.II00I = !0);
         }),
         (e.prototype.lIllO = function (t) {
-          var i, s;
-          (this.background = "hsla(" + this.hue + ",70%,30%,.15)"),
+          var i, s, gradient;
+          (this.background = "hsla(270,0%,40%,0.1)"),
             (this.medium = "hsla(" + this.hue + ",70%,40%,.25)"),
-            (this.color = "hsla(" + this.hue + ",50%,80%,1)"),
+            (this.color = "hsla(270,0%,100%,1)"),
+          // (this.background = "hsla(" + this.hue + ",70%,30%,.15)"),
+          //   (this.medium = "hsla(" + this.hue + ",70%,40%,.25)"),
+          //   (this.color = "hsla(" + this.hue + ",50%,80%,1)"),
             t.save(),
             t.translate(this.px, this.ll1lO),
             t.clearRect(0, 0, this.llllO, this.lllOI),
@@ -11361,22 +11436,33 @@ tr .fa.fa-trophy {
             "GG" === this.icon && (t.font = i + "pt Play"),
             (t.textBaseline = "middle"),
             (t.textAlign = "center"),
-            (t.fillStyle = this.color),
+
+            (gradient = t.createLinearGradient(0, 0, this.llllO, this.lllOI)),
+            gradient.addColorStop(0, "hsla(270, 100%, 50%, 0.8)"),
+            gradient.addColorStop(1, "hsla(180, 100%, 50%, 0.8)"),
+
+            (t.fillStyle = gradient),//(t.fillStyle = this.color),
+
+
             t.fillText(this.icon, this.llllO / 2, 0.45 * this.lllOI),
+
+            (t.fillStyle = this.color),
+
             this.lIl0I.is_mobile ||
               this.lIl0I.is_mobile_app ||
               this.using_gamepad ||
               ((i = Math.round(this.lllOI / 8)),
               (t.font = i + "pt Play"),
               t.fillText(this.key, 0.8 * this.llllO, 0.7 * this.lllOI),
-              (t.strokeStyle = this.color),
-              (s = (Math.max(2, this.key.length) * this.llllO) / 8),
-              t.strokeRect(
-                0.8 * this.llllO - s / 2,
-                0.7 * this.lllOI - 0.1 * this.lllOI,
-                s,
-                0.2 * this.lllOI
-              )),
+              // (t.strokeStyle = this.color),
+              (s = (Math.max(2, this.key.length) * this.llllO) / 8)
+              // ,t.strokeRect(
+              //   0.8 * this.llllO - s / 2,
+              //   0.7 * this.lllOI - 0.1 * this.lllOI,
+              //   s,
+              //   0.2 * this.lllOI
+              // )
+              ),
             t.restore();
         }),
         (e.bubble = function (t, e, i, s, l, n) {
@@ -11497,10 +11583,13 @@ tr .fa.fa-trophy {
       return (
         extend(e, t),
         (e.prototype.lIllO = function (t) {
-          var i, s, l;
-          (this.background = "hsla(" + this.hue + ",70%,30%,.15)"),
+          var i, s, l, gradient;
+          (this.background = "hsla(270,0%,40%,0.1)"),
             (this.medium = "hsla(" + this.hue + ",70%,40%,.25)"),
-            (this.color = "hsla(" + this.hue + ",50%,80%,1)"),
+            (this.color = "hsla(270,0%,100%,1)"),
+          // (this.background = "hsla(" + this.hue + ",70%,30%,.15)"),
+          //   (this.medium = "hsla(" + this.hue + ",70%,40%,.25)"),
+          //   (this.color = "hsla(" + this.hue + ",50%,80%,1)"),
             t.save(),
             t.translate(this.px, this.ll1lO),
             t.clearRect(0, 0, this.llllO, this.lllOI),
@@ -11518,20 +11607,29 @@ tr .fa.fa-trophy {
             (t.font = s + "pt FontAwesome"),
             (t.textBaseline = "middle"),
             (t.textAlign = "center"),
-            (t.fillStyle = this.color),
+
+            (gradient = t.createLinearGradient(0, 0, this.llllO, this.lllOI)),
+            gradient.addColorStop(0, "hsla(270, 100%, 50%, 0.8)"),
+            gradient.addColorStop(1, "hsla(180, 100%, 50%, 0.8)"),
+            (t.fillStyle = gradient),
+            
             t.fillText(this.icon, this.llllO / 2, 0.45 * this.lllOI),
+
+            (t.fillStyle = this.color),
+
             this.lIl0I.is_mobile ||
               ((s = Math.round(this.lllOI / 8)),
               (t.font = s + "pt Play"),
               t.fillText(this.key, 0.5 * this.llllO, 0.8 * this.lllOI),
-              (t.strokeStyle = this.color),
-              (l = (Math.max(2, this.key.length) * this.llllO) / 8),
-              t.strokeRect(
-                0.5 * this.llllO - l / 2,
-                0.8 * this.lllOI - 0.1 * this.lllOI,
-                l,
-                0.2 * this.lllOI
-              )),
+              // (t.strokeStyle = this.color),
+              (l = (Math.max(2, this.key.length) * this.llllO) / 8)
+              // ,t.strokeRect(
+              //   0.5 * this.llllO - l / 2,
+              //   0.8 * this.lllOI - 0.1 * this.lllOI,
+              //   l,
+              //   0.2 * this.lllOI
+              // )
+              ),
             t.restore();
         }),
         (e.roundRect = function (t, e, i, s, l, n) {
@@ -11619,12 +11717,15 @@ tr .fa.fa-trophy {
           return Math.min(6, this.lIl0I.OIO01.Ol000.type.level);
         }),
         (e.prototype.lIllO = function (t) {
-          var e, i, s, l, n, a, o, r, h, u, d, c, p, I, O;
+          var e, i, s, l, n, a, o, r, h, u, d, c, p, I, O, gradient;
           if (this.lIl0I.weapons) {
             for (
               this.background = "hsla(" + this.hue + ",70%,30%,.15)",
                 this.medium = "hsla(" + this.hue + ",50%,40%,.5)",
-                this.color = "hsla(" + this.hue + ",50%,80%,1)",
+                this.color = "hsla(270,50%,100%,1)",
+              // this.background = "hsla(" + this.hue + ",70%,30%,.15)",
+              //   this.medium = "hsla(" + this.hue + ",50%,40%,.5)",
+              //   this.color = "hsla(" + this.hue + ",50%,80%,1)",
                 r = Math.min(6, this.ship_level),
                 n = this.lllOI / 8,
                 i = n / 4,
@@ -11632,7 +11733,13 @@ tr .fa.fa-trophy {
                 t.save(),
                 t.translate(this.px, this.ll1lO),
                 t.clearRect(0, 0, this.llllO, this.lllOI),
-                t.fillStyle = this.medium,
+
+                (gradient = t.createLinearGradient(0, 0, this.llllO, this.lllOI)),
+                gradient.addColorStop(0, "hsla(270, 100%, 20%, 0.5)"),
+                gradient.addColorStop(1, "hsla(180, 100%, 20%, 0.5)"),
+                t.fillStyle = gradient,
+                // t.fillStyle = this.medium,
+
                 t.beginPath(),
                 t.moveTo(0, 0),
                 t.lineTo(O - i, 0),
@@ -11956,9 +12063,9 @@ tr .fa.fa-trophy {
             e.IIIlO.constructor.call(this),
             this.levelmod = 10,
             this.hue = this.lIl0I.display.screen.OI01O.hue,
-            this.background = "hsla(" + this.hue + ",50%,20%,.75)",
-            this.medium = "hsla(" + this.hue + ",50%,40%,.5)",
-            this.color = "hsla(" + this.hue + ",50%,80%,1)",
+            this.background = "hsla(270,100%,20%,.75)",
+            this.medium = "hsla(270,100%,20%,.5)",
+            this.color = "hsla(270,0%,100%,1)",
             p = 0.01,
             c = (16 * p) / 9,
             this.title = new WeaponStoreTitle(this),
@@ -12168,8 +12275,10 @@ tr .fa.fa-trophy {
             t.save(),
             t.translate(this.px, this.ll1lO),
             (e = t.createLinearGradient(0, 0, this.llllO, this.lllOI)),
-            e.addColorStop(0, this.store.background),
-            e.addColorStop(1, "#000"),
+            e.addColorStop(0, "hsla(270, 100%, 20%, 0.5)"),
+            e.addColorStop(1, "hsla(180, 100%, 20%, 0.5)"),
+            // e.addColorStop(0, this.store.background),
+            // e.addColorStop(1, "#000"),
             (t.fillStyle = e),
             (i = 0.025 * this.lllOI),
             t.beginPath(),
@@ -12182,8 +12291,10 @@ tr .fa.fa-trophy {
             t.closePath(),
             t.fill(),
             (e = t.createLinearGradient(0, 0, this.llllO, this.lllOI)),
-            e.addColorStop(0, this.store.medium),
-            e.addColorStop(1, this.store.background),
+            // e.addColorStop(0, this.store.medium),
+            // e.addColorStop(1, this.store.background),
+            e.addColorStop(0, "hsla(270, 100%, 20%, 0.5)"),
+            e.addColorStop(1, "hsla(180, 100%, 20%, 0.5)"),
             (t.fillStyle = e),
             t.beginPath(),
             t.moveTo(0.3 * this.llllO, 0),
@@ -12221,22 +12332,22 @@ tr .fa.fa-trophy {
             t.lineTo(0, e),
             t.closePath(),
             t.fill(),
-            (t.font = Math.round(this.lllOI / 3) + "pt Play"),
+            (t.font = Math.round(this.lllOI / 2.5) + "pt Play"),
             (t.textAlign = "left"),
             (t.textBaseline = "middle"),
-            (t.fillStyle = "rgba(0,0,0,.8)"),
+            (t.fillStyle = "rgba(0,0,0,1)"),
             t.fillText(
               this.store.lIl0I.mode.getWeaponStoreName(),
               2 * e,
               this.lllOI / 2
             ),
-            (t.font = Math.round(this.lllOI / 3) + "pt FontAwesome"),
+            (t.font = Math.round(this.lllOI / 2.5) + "pt FontAwesome"),
             (t.textAlign = "right"),
             t.fillText("", this.llllO - 2 * e, this.lllOI / 2),
-            (t.font = Math.round(this.lllOI / 3) + "pt Play"),
+            (t.font = Math.round(this.lllOI / 2.5) + "pt Play"),
             t.fillText(
               this.credits,
-              this.llllO - 2 * e - (2 * this.lllOI) / 3,
+              this.llllO - 2 * e - (2 * this.lllOI) / 2.4,
               this.lllOI / 2
             ),
             t.restore()
@@ -12281,11 +12392,11 @@ tr .fa.fa-trophy {
             e.lineTo(0, i),
             e.closePath(),
             e.fill(),
-            (e.font = Math.round(this.lllOI / 4) + "pt Play"),
+            (e.font = Math.round(this.lllOI / 2) + "pt SBGlyphs"),
             (e.textAlign = "center"),
             (e.textBaseline = "middle"),
-            (e.fillStyle = "rgba(0,0,0,.8)"),
-            e.fillText(t("EXIT"), this.llllO / 2, this.lllOI / 2),
+            (e.fillStyle = "rgba(0,0,0,1)"),
+            e.fillText(t("\u00b3"), this.llllO / 2, this.lllOI / 2),
             e.restore()
           );
         }),
@@ -12398,10 +12509,10 @@ tr .fa.fa-trophy {
             t.clearRect(0, 0, this.llllO, this.lllOI),
             (t.fillStyle = "rgba(0,0,0,.5)"),
             t.fillRect(0, 0, this.llllO, this.lllOI),
-            (t.globalAlpha = this.enabled ? 1 : 0.25),
+            (t.globalAlpha = this.enabled ? 1 : 0.4),
             (e = Math.round(this.lllOI / 4)),
             (i = Math.round(this.lllOI / 8)),
-            (t.fillStyle = "rgba(255,255,255,.9)"),
+            (t.fillStyle = "#fff"),
             (t.font = e + "pt FontAwesome"),
             (t.textAlign = "center"),
             (t.textBaseline = "middle"),
@@ -12448,7 +12559,7 @@ tr .fa.fa-trophy {
       function e(t) {
         (this.store = t),
           e.IIIlO.constructor.call(this),
-          (this.OIIIl = 9999),
+          (this.OIIIl = 60),
           (this.end = Date.now() + 6e4);
       }
       return (
@@ -12799,9 +12910,25 @@ tr .fa.fa-trophy {
                   t("Copy Room Link").toUpperCase(),
                   "roomlink"
                 )),
+
+                // (this.settings = new MenuButton(
+                //   this.lIl0I,
+                //   this,
+                //   t("SETTINGS"),
+                //   "settings"
+                // )),
+                (this.quit = new MenuButton(
+                  this.lIl0I,
+                  this,
+                  t("QUIT"),
+                  "quit"
+                )),
                 this.addButton(this.resume),
                 this.addButton(this.IlOO1),
-                this.addButton(this.roomlink)),
+                this.addButton(this.roomlink),
+
+                // this.addButton(this.settings),
+                this.addButton(this.quit)),
             (this.selected_index = 0),
             this.updateSelection()
           );
@@ -12826,15 +12953,15 @@ tr .fa.fa-trophy {
               t("Quit to Menu").toUpperCase(),
               "quit_to_menu"
             )),
-            (this.quit_game = new MenuButton(
-              this.lIl0I,
-              this,
-              t("Quit Game").toUpperCase(),
-              "quit_game"
-            )),
+            // (this.quit_game = new MenuButton(
+            //   this.lIl0I,
+            //   this,
+            //   t("Quit Game").toUpperCase(),
+            //   "quit_game"
+            // )),
             this.addButton(this.quit_cancel),
             this.addButton(this.quit_to_menu),
-            this.addButton(this.quit_game),
+            // this.addButton(this.quit_game),
             (this.selected_index = 0),
             this.updateSelection(),
             (this.quit_menu_shown = !0)
@@ -13006,11 +13133,14 @@ tr .fa.fa-trophy {
           return (this.hue = t), (this.II00I = !0);
         }),
         (i.prototype.lIllO = function (e) {
-          var i;
+          var i, gradient;
           return (
             (this.background = "hsla(" + this.hue + ",70%,30%,.15)"),
-            (this.medium = "hsla(" + this.hue + ",50%,50%,.4)"),
-            (this.color = "hsla(" + this.hue + ",50%,80%,1)"),
+            (this.medium = "hsla(270,0%,100%,.4)"),
+            (this.color = "hsla(270,0%,100%,1)"),
+            // (this.background = "hsla(" + this.hue + ",70%,30%,.15)"),
+            // (this.medium = "hsla(" + this.hue + ",50%,50%,.4)"),
+            // (this.color = "hsla(" + this.hue + ",50%,80%,1)"),
             e.save(),
             e.translate(this.px, this.ll1lO),
             (i = Math.round((20 * this.llllO) / 512)),
@@ -13032,7 +13162,12 @@ tr .fa.fa-trophy {
             e.fill(),
             (e.fillStyle = this.medium),
             e.fillRect(0, 0.1 * this.llllO, this.llllO, 0.02 * this.llllO),
-            (e.fillStyle = this.background),
+
+            gradient = e.createLinearGradient(0, 0, this.llllO, 0),
+              gradient.addColorStop(0, "hsl(270, 100%, 5%)"),
+              gradient.addColorStop(1, "hsl(180, 100%, 5%)"),
+
+            (e.fillStyle = gradient),// (e.fillStyle = this.background),
             e.fillRect(
               0,
               0.12 * this.llllO,
@@ -13160,9 +13295,12 @@ tr .fa.fa-trophy {
         (e.prototype.lIllO = function (t) {
           var e;
           for (
-            this.background = "hsla(" + this.hue + ",70%,30%,.15)",
-              this.medium = "hsla(" + this.hue + ",70%,40%,.05)",
-              this.color = "hsla(" + this.hue + ",50%,80%,1)",
+            this.background = "hsla(270,0%,100%,.15)",
+              this.medium = "hsla(270,0%,100%,.05)",
+              this.color = "hsla(270,0%,100%,1)",
+            // this.background = "hsla(" + this.hue + ",70%,30%,.15)",
+            //   this.medium = "hsla(" + this.hue + ",70%,40%,.05)",
+            //   this.color = "hsla(" + this.hue + ",50%,80%,1)",
               t.save(),
               t.translate(this.px, this.ll1lO),
               t.clearRect(0, 0, this.llllO, this.lllOI),
@@ -26801,6 +26939,18 @@ tr .fa.fa-trophy {
                 ((l.fillStyle = "#F66"),
                 (l.strokeStyle = "#000"),
                 (l.lineWidth = 6),
+
+                // (l.font =
+                //   Math.round(0.9 * this.canvas.height) + "pt SBGlyphs"),
+                // (l.textAlign = "center"),
+                // (l.textBaseline = "middle"),
+                // l.strokeText(
+                //   "[",
+                //   this.canvas.width / 2,
+                //   this.canvas.height / 2
+                // ),
+                // l.fillText("[", this.canvas.width / 2, this.canvas.height / 2)),
+
                 (l.font =
                   Math.round(0.9 * this.canvas.height) + "pt FontAwesome"),
                 (l.textAlign = "center"),
