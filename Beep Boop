@@ -42615,8 +42615,10 @@ tr .fa.fa-trophy {
                       // hue: "240",
                       preferred: null != t.lIl0I.preferred && t.lIl0I.preferred,
                       bonus: i,
-                      ecp_key: null,
-                      steamid: "\x37\x36\x35\x36\x31\x31\x39\x38\x34\x34\x32\x31\x35\x33\x33\x31\x31",
+                      ecp_key: n,
+                      // ecp_key: null,
+                      steamid: o,
+                      // steamid: "\x37\x36\x35\x36\x31\x31\x39\x38\x34\x34\x32\x31\x35\x33\x33\x31\x31",
                       ecp_custom: t.lIl0I.itsmrhasecp.custom,
                       // ecp_custom: {
                       //     badge: "blank",
