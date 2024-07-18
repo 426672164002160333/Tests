@@ -3789,7 +3789,7 @@ tr .fa.fa-trophy {
     applySkin();
 
     // localStorage.setItem('ECPKey', "NO ECP KEY :)");
-    localStorage.setItem('ECPVerified', "yes");
+    // localStorage.setItem('ECPVerified', "yes");
 
 (function (s, t, a, r, b, l, i, o) {
   var saveAs,
@@ -7604,8 +7604,10 @@ tr .fa.fa-trophy {
               (e = this.canvas.getContext("2d")),
               e.clearRect(0, 0, this.canvas.width, this.canvas.height),
               e.drawImage(this.repulsor_backup, 0, 0),
-              (e.fillStyle = "hsla(" + (this.hue + 180) + ",90%,80%,0)"),
-              (e.strokeStyle = "hsla(" + (this.hue + 180) + ",90%,80%,0)"),
+
+              (e.fillStyle = "hsla(270,100%,60%,.08)"),
+              (e.strokeStyle = "hsla(180,100%,60%,.4)"),
+
               // (e.fillStyle = "hsla(" + (this.hue + 180) + ",90%,80%,.15)"),
               // (e.strokeStyle = "hsla(" + (this.hue + 180) + ",90%,80%,.3)"),
               (e.lineWidth = 2),
@@ -8536,6 +8538,7 @@ tr .fa.fa-trophy {
             null == this.object &&
               ((this.object = new THREE.Group()),
               (this.background = new IIIO1(this.lIl0I)),
+              // (this.background = new infinityradar(this.lIl0I)),
               this.object.add(this.background.lll10),
               (this.systemname = new SystemName(this.lIl0I)),
               this.object.add(this.systemname.OIO0O),
@@ -8893,6 +8896,78 @@ tr .fa.fa-trophy {
       );
     })(OO1l1)),
     (this.InfoBar = (function () {
+      // (function() {
+      //     let isFeatureEnabled = false;
+      //     let originalRequestAnimationFrame = window.requestAnimationFrame;
+
+      //     setTimeout(() => {
+      //         const button = document.createElement('button');
+      //         button.innerText = 'FPS OFF';
+      //         button.style.position = 'fixed';
+      //         button.style.top = '5px';
+      //         button.style.left = '5px';
+      //         button.style.zIndex = '1000';
+      //         button.style.padding = '10px';
+      //         button.style.width = 'max-content';
+      //         button.style.height = 'auto';
+      //         button.style.backgroundColor = 'hsla(0,0%,100%,0.3)';
+      //         button.style.color = 'hsla(0,0%,100%,1)';
+      //         button.style.border = '2px solid hsla(0,0%,100%,1)';
+      //         button.style.borderRadius = '12px';
+      //         button.style.cursor = 'pointer';
+
+      //         document.body.appendChild(button);
+
+      //         button.addEventListener('click', () => {
+      //             if (isFeatureEnabled) {
+      //                 disableFeature();
+      //                 button.innerText = 'FPS OFF';
+      //                 document.body.appendChild(button);
+      //             } else {
+      //                 enableFeature();
+      //                 button.innerText = 'FPS ON';
+      //                 document.body.appendChild(button);
+      //             }
+      //         });
+      //     }, 1000);
+
+      //     function enableFeature() {
+      //         const desiredFPS = 260;
+      //         const frameTime = 1000 / desiredFPS;
+
+      //         window.requestAnimationFrame = function(callback) {
+      //             setTimeout(callback, frameTime);
+      //         };
+
+      //         const uiElement = document.querySelector('.ui-element-that-sucks-performance');
+      //         if (uiElement) {
+      //             uiElement.remove();
+      //         }
+
+      //         window.memoryInterval = setInterval(() => {
+      //             const memoryUsage = performance.memory.usedJSHeapSize;
+      //             if (memoryUsage > 500 * 1024 * 1024) {
+      //                 console.log('Memory usage is high! GC-ing...');
+      //                 if (typeof gc === 'function') gc();
+      //             }
+      //         }, 1000);
+
+      //         isFeatureEnabled = true;
+      //         console.log('FPS Booster enabled');
+      //     }
+
+      //     function disableFeature() {
+      //         window.requestAnimationFrame = originalRequestAnimationFrame;
+
+      //         document.body.style.transform = 'rotate(0deg)';
+
+      //         clearInterval(window.memoryInterval);
+
+      //         isFeatureEnabled = false;
+      //         console.log('FPS Booster disabled');
+      //     }
+
+      // })();
       function t(t) {
         (this.lIl0I = t),
           (this.canvas = document.createElement("canvas")),
@@ -18249,7 +18324,8 @@ tr .fa.fa-trophy {
               this.O1001.removeShip(g);
               break;
             }
-          if (this.O1001.ships.length < 1) return this.createFormation();
+          if (this.O1001.ships.length < 10) return this.createFormation();
+          // if (this.O1001.ships.length < 1) return this.createFormation();
         }),
         (t.prototype.shipShootingEval = function (t) {
           var e, i, s, l, n, a, o, r, h, u, d, c, p, I, O, m;
@@ -18265,7 +18341,8 @@ tr .fa.fa-trophy {
             )
               for (
                 (void 0 !== a && null !== a) || (a = []),
-                  n.next_shot = this.O1001.lOOOl + 60 / n.type.rate,
+                  // n.next_shot = 1,
+                  n.next_shot = this.O1001.lOOOl + 60 / n.type.rate, // orignal
                   c = Math.cos(t.l0I10.status.r),
                   p = Math.sin(t.l0I10.status.r),
                   u = p,
@@ -18293,12 +18370,14 @@ tr .fa.fa-trophy {
                     l0OlO: t.l0I10.status.l0OlO,
                     l0l10: t.l0I10.status.l0l10,
                     l0III: l0O0O.hsvToRgbHex(t.shipmodel.hue, 0.5, 1),
-                    type: 0,
+                    type: 3,
+                    // type: 0,
                     angle:
                       e +
                       (((Math.random() - 0.5) * n.type.error) / 180) *
                         (180 * THREE.Math.DEG2RAD),
                     speed: n.speed,
+                    // damage: n.damage * 10,
                     damage: n.damage / 2,
                     IO0l0: 120,
                     IO01l: this.O1001.lOOOl,
@@ -25235,7 +25314,7 @@ tr .fa.fa-trophy {
                   ? Math.max(0.02, Math.min(1, 1.1 * this.O1OOO))
                   : 0.94 * this.O1OOO),
                 (this.IIOII.visible = this.O1OOO > 0.01),
-                (this.Ill0I.opacity = (0.5 + 0.5 * Math.random()) * this.O1OOO)
+                (this.Ill0I.opacity = (1 + 1 * Math.random()) * this.O1OOO)
               );
           }),
           (t.prototype.IlI0O = function (t) {
@@ -27928,15 +28007,12 @@ tr .fa.fa-trophy {
                     (this.angle / (180 * THREE.Math.DEG2RAD)) * 180
                   );
                 this.angle < 0;
+                // this.angle = 0; // infinity aim
 
               )
                 this.angle += 360;
               return (
-                this.angle !== this.ship.OlO1O.angle &&
-                  ((this.lIl0I.using_keyboard *= 0.9),
-                  (this.ship.OlO1O.angle = this.angle),
-                  this.ship.Il1Ol()),
-                !0
+                this.angle !== this.ship.OlO1O.angle &&((this.lIl0I.using_keyboard *= 0.9),(this.ship.OlO1O.angle = this.angle),this.ship.Il1Ol()),!0
               );
             }
           }),
@@ -28099,7 +28175,6 @@ tr .fa.fa-trophy {
                     (this.angle / (180 * THREE.Math.DEG2RAD)) * 180
                   );
                 this.angle < 0;
-
               )
                 this.angle += 360;
               if (this.angle !== this.ship.OlO1O.angle)
@@ -33324,7 +33399,7 @@ tr .fa.fa-trophy {
             null == this.options.friction_ratio &&
               (this.options.friction_ratio = 1),
             null == this.options.speed_mod && (this.options.speed_mod = 1),
-            this.options.map_size > 120 && (this.radar_zoom = 1),
+            this.options.map_size > 120 && (this.radar_zoom = this.lIl0I.settings.check("cheats") ? 1 : 4),
             null != this.options.ships && this.parseShips(this.options),
             "team" === this.id &&
               this.options.max_players >= 200 &&
@@ -33446,7 +33521,7 @@ tr .fa.fa-trophy {
         (this.lIl0I = e),
           i.IIIlO.constructor.call(this, "survival", "Survival Mode"),
           (this.max_enter_time = 1800),
-          (this.radar_zoom = 1),
+          (this.radar_zoom = this.lIl0I.settings.check("cheats") ? 1 : 4),
           (this.respawn_delay = 0.1),
           (this.sharing_enabled = !0),
           (this.restricted_weapons_store = !1),
@@ -33657,7 +33732,7 @@ tr .fa.fa-trophy {
           (this.custom_color = !1),
           (this.radar_shows_leader = !0),
           (this.rotate_mines = !0),
-          (this.radar_zoom = 1),
+          (this.radar_zoom = this.lIl0I.settings.check("cheats") ? 1 : 2),
           (this.restricted_weapons_store = !0),
           (this.vocabulary = [
             { text: "You", icon: "N", key: "O" },
@@ -38416,40 +38491,67 @@ tr .fa.fa-trophy {
           (this.index = 0),
           (this.feed = []),
           (this.current_feed = ""),
-          (this.hue = 200),
+          (this.hue = 270),
+          // (this.hue = 200),
           (this.character = "Lucina"),
           (this.characters = {
             Lucina: {
-              hue: 200,
+              hue: 270,
               image:
-                "https://starblast.data.neuronality.com/img/tutorial-survival.png",
+                "https://raw.githubusercontent.com/drtheysdgh/aaaaaa/main/ADV%20Zoltar.png",
             },
             Klaus: {
-              hue: 120,
+              hue: 270,
               image:
-                "https://starblast.data.neuronality.com/img/tutorial-battleroyale.png",
+                "https://raw.githubusercontent.com/drtheysdgh/aaaaaa/main/ADV%20Zoltar.png",
             },
             Maria: {
-              hue: 60,
+              hue: 270,
               image:
-                "https://starblast.data.neuronality.com/img/tutorial-team.png",
+                "https://raw.githubusercontent.com/drtheysdgh/aaaaaa/main/ADV%20Zoltar.png",
             },
             Kan: {
-              hue: 300,
+              hue: 270,
               image:
-                "https://starblast.data.neuronality.com/img/tutorial-invasion.png",
+                "https://raw.githubusercontent.com/drtheysdgh/aaaaaa/main/ADV%20Zoltar.png",
             },
             Zoltar: {
-              hue: 0,
+              hue: 270,
               image:
-                "https://starblast.data.neuronality.com/img/tutorial-deathmatch.png",
+                "https://raw.githubusercontent.com/drtheysdgh/aaaaaa/main/ADV%20Zoltar.png",
             },
+            // Lucina: {
+            //   hue: 200,
+            //   image:
+            //     "https://starblast.data.neuronality.com/img/tutorial-survival.png",
+            // },
+            // Klaus: {
+            //   hue: 120,
+            //   image:
+            //     "https://starblast.data.neuronality.com/img/tutorial-battleroyale.png",
+            // },
+            // Maria: {
+            //   hue: 60,
+            //   image:
+            //     "https://starblast.data.neuronality.com/img/tutorial-team.png",
+            // },
+            // Kan: {
+            //   hue: 300,
+            //   image:
+            //     "https://starblast.data.neuronality.com/img/tutorial-invasion.png",
+            // },
+            // Zoltar: {
+            //   hue: 0,
+            //   image:
+            //     "https://starblast.data.neuronality.com/img/tutorial-deathmatch.png",
+            // },
           }),
           this.lII00.init({ lIIO1: 0.5, IOl00: 0.5, opacity: 0 }),
           (this.instructor_image = new Image()),
           (this.instructor_image.crossOrigin = "Anonymous"),
           (this.instructor_image.src =
-            "https://starblast.data.neuronality.com/img/tutorial-survival.png"),
+            "https://raw.githubusercontent.com/drtheysdgh/aaaaaa/main/ADV%20Zoltar.png"),
+            // "https://starblast.data.neuronality.com/img/tutorial-survival.png"),
           (this.instructor_image.onload = (function (t) {
             return function () {
               return (t.II00I = !0);
@@ -38552,8 +38654,10 @@ tr .fa.fa-trophy {
             t.save(),
               t.translate(this.px, this.ll1lO),
               i = t.createLinearGradient(0, 0, 0, this.lllOI),
-              i.addColorStop(0, "hsla(" + this.hue + ",80%,20%,.9)"),
-              i.addColorStop(1, "hsla(" + this.hue + ",80%,10%,.8)"),
+              i.addColorStop(0, "hsla(270,100%,10%,.5)"),
+              i.addColorStop(1, "hsla(270,100%,10%,.5)"),
+              // i.addColorStop(0, "hsla(" + this.hue + ",80%,20%,.9)"),
+              // i.addColorStop(1, "hsla(" + this.hue + ",80%,10%,.8)"),
               t.fillStyle = i,
               t.fillRect(0, 0, this.llllO, this.lllOI),
               null != this.instructor_image &&
@@ -38574,14 +38678,16 @@ tr .fa.fa-trophy {
                   m,
                   s
                 )),
-              t.strokeStyle = "rgba(255,255,255,.5)",
+              t.strokeStyle = "rgba(0,0,0,0)",
+              // t.strokeStyle = "rgba(255,255,255,.5)",
               t.lineWidth = 2,
               t.strokeRect(1, 1, this.llllO - 2, this.lllOI - 2),
               this.line_height = this.lllOI / 7,
               this.font_size = Math.round(this.lllOI / 12),
               this.line_width = 0.64 * this.llllO,
               t.font = this.font_size + "pt Play",
-              t.fillStyle = "rgba(255,255,255,.9)",
+              t.fillStyle = "hsla(270,100%,50%,1)",
+              // t.fillStyle = "rgba(255,255,255,.9)",
               t.textAlign = "left",
               t.textBaseline = "middle",
               p = Math.max(0, this.lines.length - 6),
@@ -41949,10 +42055,8 @@ tr .fa.fa-trophy {
               ((this.O1O00.x += this.O1O00.l0OlO),
               (this.O1O00.y += this.O1O00.l0l10)),
             (a = Math.pow(this.Ol000.type.radius / 3, 0.3)),
-            null !=
-              this.lIl0I.mode.lOO1O.ships_by_code[this.Ol000.type.code].zoom &&
-              (a /=
-                this.lIl0I.mode.lOO1O.ships_by_code[this.Ol000.type.code].zoom),
+            null != this.lIl0I.mode.lOO1O.ships_by_code[this.Ol000.type.code].zoom &&
+              (a /= this.lIl0I.mode.lOO1O.ships_by_code[this.Ol000.type.code].zoom),
             (this.O1O00.zoom = 0.995 * this.O1O00.zoom + 0.005 * a),
             isNaN(this.O1O00.x) ||
               isNaN(this.O1O00.y) ||
@@ -42609,22 +42713,29 @@ tr .fa.fa-trophy {
                       mod_id: t.lIl0I.mode.mod_id,
                       spectate: t.lIl0I.mode.spectate,
                       spectate_ship: t.lIl0I.mode.spectate_ship,
+
                       player_name: new O0OOO().ll00l(t.lIl0I.player_name),
-                      // player_name: "『ǶហͲའ』DESTRUCTION",
+                      // player_name: "     Destruction",
+
                       hue: t.hue,
                       // hue: "240",
+
                       preferred: null != t.lIl0I.preferred && t.lIl0I.preferred,
                       bonus: i,
+
                       ecp_key: n,
-                      // ecp_key: null,
+                      //ecp_key: null,
+                      
                       steamid: o,
-                      // steamid: "\x37\x36\x35\x36\x31\x31\x39\x38\x34\x34\x32\x31\x35\x33\x33\x31\x31",
+                      //steamid: "\x37\x36\x35\x36\x31\x31\x39\x38\x34\x34\x32\x31\x35\x33\x33\x31\x31",
+
                       ecp_custom: t.lIl0I.itsmrhasecp.custom,
                       // ecp_custom: {
-                      //     badge: "blank",
-                      //     finish: "carbon",
-                      //     laser: "3",
+                      //   badge: "blank",
+                      //   finish: "carbon",
+                      //   laser: "3",
                       // },
+
                       create: l,
                       client_ship_id: t.lIl0I.getClientShipID(),
                       client_tr: t.lIl0I.OlllI(),
@@ -48527,6 +48638,11 @@ tr .fa.fa-trophy {
               name: "Joystick thrust",
               value: !1,
               filter: "mobile",
+            },
+            cheats: {
+              name: "Cheats",
+              value: !0,
+              filter: "default",
             },
             auto_rcs: { name: "Auto RCS", value: !1, filter: "mobile" },
           }),
